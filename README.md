@@ -10,11 +10,7 @@ to create full-featured crop tool
 
 First install the package via npm
 
-`$ npm install react-native-image-rotate@https://github.com/barrsan/react-native-image-rotate`
-
-then use [rnpm](https://github.com/rnpm/rnpm) to link native libraries
-
-`$ react-native link react-native-image-rotate`
+`$ yarn add react-native-image-rotate@https://github.com/rootstrap/react-native-image-rotate`
 
 ## Usage
 
@@ -32,7 +28,7 @@ static rotateImage(
 
 ## Example
 
-Check the [Example directory](https://github.com/dgladkov/react-native-image-rotate/tree/master/Example)
+Check the [Example directory](https://github.com/rootstrap/react-native-image-rotate/tree/master/Example)
 for a working iOS/Android example
 
 ## License
