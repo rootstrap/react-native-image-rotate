@@ -32,7 +32,8 @@ RCT_EXPORT_METHOD(rotateImage:(NSURLRequest *)imageURL
                   errorCallback:(RCTResponseErrorBlock)errorCallback)
 {
 
-  [_bridge.imageLoader loadImageWithURLRequest:imageURL callback:^(NSError *error, UIImage *image) {
+  [[_bridge moduleForName:@"ImageLoader"] loadImageWithURLRequest:imageURL callback:^(NSError *error, UIImage *image) {
+  // [_bridge.imageLoader loadImageWithURLRequest:imageURL callback:^(NSError *error, UIImage *image) {
     if (error) {
       errorCallback(error);
       return;
